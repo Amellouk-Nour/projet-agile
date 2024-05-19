@@ -17,6 +17,10 @@
 h1,h2{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
 input::placeholder {
     text-align: right;
@@ -97,7 +101,7 @@ button {
     padding: 1.1em;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 0.7vw;
+    font-size: 1vw;
     margin-bottom: 30px;
 }
 

@@ -1,0 +1,155 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    font-weight: 500;
+    box-sizing: content-box;
+    
+}
+:root {
+    --grey: rgb(107, 117, 125);
+    --light-grey: rgb(179, 179, 179);
+    --blue: rgb(0, 133, 251);
+}
+
+h1,h2{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.active{
+    font-weight: 800;
+    color: var(--blue)
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom : 2px solid black;
+    height: 10vh;
+    background: no-repeat right url(../assets/ENSIAS.svg);
+}
+.header h1{
+    text-align: left;
+    font-size: 1.8vw;
+    margin : 4vh;
+    color: black;
+}
+.header span{
+    text-transform: uppercase;
+}
+
+#sidebar {
+    float : left ;
+    width: 200px;
+    padding: 20px;
+    padding-top: 0;
+    height: 84vh;
+    border-right: 2px solid black;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 8px;
+}
+#sidebar ul .header-li{
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+
+#sidebar ul li:not(.header-li){
+    margin-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: ;
+}
+
+
+main {
+    padding-top: 1px;
+    margin: 0 0 0 280px;
+}
+.main h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.label-group{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.label-group label[for="nom"]{
+    margin: 0 320px;
+}
+.input-group {
+    margin-bottom: 10px;
+    height: vh;
+}
+.input-group input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1.2vw;
+    line-height: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 330px;
+    padding: 8px;
+    margin-left: 20px;
+}
+.btn-1{
+    
+    color: var(--light-grey);
+    border: none;
+    padding: 0.6em 1.1em ;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-left: 970px;
+    width: 164px;
+    border: 1px solid var(--light-grey);
+}
+.btn-1::before{
+    content: '+';
+}
+.btn-2{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-left: 1014px;
+    width: 120px;
+}
+
+.btn-1:hover{
+    transform: scale(1.1);
+}
+.btn-2:hover{
+    transform: scale(1.1);
+}
+
+input:not([placeholder="Nom"]):not([placeholder="Prenom"])::placeholder{
+    color: black;
+}
